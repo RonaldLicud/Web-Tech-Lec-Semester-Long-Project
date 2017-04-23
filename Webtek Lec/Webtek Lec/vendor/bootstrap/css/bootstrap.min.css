@@ -10,12 +10,17 @@
   padding: 20px;
   background: #fff;
   border: 1px solid #666;
-  width: 80%;
+  width: 90%;
   height: 80%;
   box-shadow: 0 0 50px rgba(0,0,0,0.5);
   position: relative;
   font-color:black;
   padding-bottom:10%;
+  overflow-y: scroll;
+}
+
+.noscroll {
+    overflow: hidden;
 }
 
 .overlay {
@@ -29,6 +34,7 @@
   visibility: hidden;
   opacity: 0;
   position:fixed;
+  z-index: 9999;
 }
 
 .overlay:target {
